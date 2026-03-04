@@ -1,0 +1,7 @@
+include:
+  - assets
+  - "*.html"
+exclude:
+  - README.md
+plugins:
+  - jekyll-relative-links
