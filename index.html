@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя Сладость - Главная</title>
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <a href="index.html">
+            <img src="assets/img/logo.svg" alt="Логотип Моя Сладость" class="logo" width="160" height="130">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="cakes.html">Готовые торты</a></li>
+                <li><a href="filling.html">Начинка</a></li>
+                <li><a href="delivery.html">Доставка</a></li>
+                <li><a href="index.html#feedback">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner first">
+        <div class="content">
+            <h1>ДОМАШНЯЯ КОНДИТЕРСКАЯ</h1>
+            <h2>Сластена</h2>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="content">
+            <div class="advantage">
+                <img src="assets/img/icons/icon-1.png" alt="Натуральные продукты" width="60" height="60">
+                <p>Только<br> натуральные продукты</p>
+            </div>
+            <div class="advantage">
+                <img src="assets/img/icons/icon-2.png" alt="Без консервантов" width="60" height="60">
+                <p>Без консервантов,<br> срок хранения 48 часов</p>
+            </div>
+            <div class="advantage">
+                <img src="assets/img/icons/icon-3.png" alt="Индивидуальный дизайн" width="60" height="60">
+                <p>Индивидуальный дизайн</p>
+            </div>
+            <div class="advantage">
+                <img src="assets/img/icons/icon-4.png" alt="Разнообразие вкусов" width="60" height="60">
+                <p>Разнообразие<br> вкусов в одном торте</p>
+            </div>
+        </div>
+    </section>
+    <section class="select">
+        <div class="content">
+            <h2>А ЧЕГО ЖЕЛАЕТЕ ВЫ?</h2>
+            <div class="select__cakes">
+                <div class="select__cake">
+                    <img src="assets/img/select-cake-1.jpg" alt="Выбрать готовый торт" width="450" height="300">
+                    <a href="cakes.html">ВЫБРАТЬ ГОТОВЫЙ</a>
+                </div>
+                <div class="select__cake">
+                    <img src="assets/img/select-cake-2.jpg" alt="Заказать свой торт" width="450" height="300">
+                    <a href="index.html#feedback">ЗАКАЗАТЬ СВОЙ</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="about__wrap">
+            <div class="about__text">
+                <p>Меня зовут Ильгиза - я профессиональный кондитер и хозяйка Сластены.</p>
+                <p>Мой девиз - честная и открытая работа, индивидуальный подход.</p>
+                <p>В моих тортиках только натуральные ингредиенты и качественные продукты.</p>
+            </div>
+        </div>
+    </section>
+    <section class="reviews">
+        <div class="content">
+            <div class="review">
+                <img src="assets/img/reviews/review-1.jpg" alt="Отзыв 1" width="300" height="300">
+                <div class="review__text">
+                    <blockquote>Внимательное отношение к клиенту, вкуснющий торт и некусачие цены! Огромное спасибо за удовольствие! Ильгизе творческих успехов!</blockquote>
+                </div>
+            </div>
+            <div class="review">
+                <img src="assets/img/reviews/review-2.jpg" alt="Отзыв 2" width="300" height="300">
+                <div class="review__text">
+                    <blockquote>Торт натуральный, выполнен искусно, и подложка лишь подчеркнула торжественное лакомство! Спасибо и успехов вашему бизнесу!</blockquote>
+                </div>
+            </div>
+            <div class="review">
+                <img src="assets/img/reviews/review-3.jpg" alt="Отзыв 3" width="300" height="300">
+                <div class="review__text">
+                    <blockquote>Изысканный вкус тортиков не оставил равнодушным ни одного сотрудника нашего Холдинга! Огромное спасибо за настроение, сладкую жизнь и превосходный вкус и дизайн Ваших тортов!</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feedback" id="feedback">
+        <div class="content">
+            <h2>ГОТОВ К ЗАКАЗУ ИЛИ НЕ МОЖЕШЬ ОПРЕДЕЛИТЬСЯ? ЗВОНИ!</h2>
+            <h3><a href="tel:+72223332255">+7 (967) 733-44-17</a></h3>
+            <h3>ИЛИ ОСТАВЬ НАМ СВОЙ НОМЕР, И МЫ ПЕРЕЗВОНИМ САМИ</h3>
+             <form action="answer.html" method="post">
+                <div class="form_contact">
+                    <input type="text" name="name" placeholder="Ваше имя" required pattern="[A-Za-zА-Яа-яЁё\s]{2,}">
+                    <input type="tel" name="tel-number" id="tel-number" placeholder="Ваш телефон" required pattern="[0-9]{11}" title="например, 89041041706">
+                </div>
+                <div class="form_download">
+                    <p>ЕСТЬ ФОТО ПРИМЕРА?</p>
+                    <label for="download">ЗАГРУЖАЙ ЗДЕСЬ</label>
+                    <input type="file" id="download" name="download" accept=".png, .jpg, .jpeg">
+                </div>
+                <div class="form_submit">
+                    <input type="checkbox" name="personal" id="personal" required>
+                    <label for="personal">Я СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</label>
+                    <input type="submit" value="ПООБЩАТЬСЯ">
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="map">
+        <div class="content">
+            <h2>МЫ НА КАРТЕ</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d244.64920581618756!2d59.38687699251936!3d54.3126392846565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x43d0712ae4efe28d%3A0xf96a22f413e1d2b1!2z0YPQuy4g0J_QtdGA0LLQvtGB0YLRgNC-0LjRgtC10LvQtdC5LCA0LCDQo9GH0LDQu9GLLCDQoNC10YHQvy4g0JHQsNGI0LrQvtGA0YLQvtGB0YLQsNC9LCA0NTM3MDA!5e0!3m2!1sru!2sru!4v1768993253231!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h2>Республика Башкортостан, г. Учалы, ул. Первостроителей, 4</h2>
+        </div>
+    </section>
+    <footer>
+        <div class="content">
+            <div class="footer_main">
+                <div class="footer_info">
+                    <p>Домашняя кондитерская<br> "Сластена"</p>
+                    <p>ИП Якупова И. Д.<br>Все права защищены</p>
+                </div>
+                <div class="footer_social">
+                    <p>Мы в социальных сетях</p>
+                    <a href="http://vk.com">
+                        <img src="assets/img/icons/icon-5.png" alt="ВКонтакте" width="30" height="30">
+                    </a>
+                    <a href="http://instagram.com">
+                        <img src="assets/img/icons/icon-6.png" alt="Инстаграм" width="30" height="30">
+                    </a>
+                </div>
+                <div class="footer_menu">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="cakes.html">Готовые торты</a></li>
+                            <li><a href="filling.html">Начинка</a></li>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="index.html#feedback">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="footer_add">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
